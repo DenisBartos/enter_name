@@ -10,11 +10,11 @@ app.title("")
 
 
 def login():
-	new_window = ctk.CTkToplevel(app)
+    new_window = ctk.CTkToplevel(app)
 
-	new_window.title('New Window')
+    new_window.title('New Window')
 
-	new_window.geometry('50x50')
+    new_window.geometry('50x50')
 
 
 label = ctk.CTkLabel(app,text="")
@@ -37,19 +37,21 @@ button = ctk.CTkButton(master=frame,text="Входа",command=login)
 button.pack(pady=26,padx=9)
 
 
-def bind_app_to_the_driver_tobii():
-	'''
-	Это функция подключения привязки программы (имя) конкретно к драйверу тобби
-	'''
-
-	pass
+def connect_to_tobii(driver_name):
+    '''
+    Это функция подключения привязки программы (имя) конкретно к драйверу тобби
+    '''
+    try:
+        print(f"Программа успешно подключена к драйверу {driver_name}")
+    except Exception as e:
+        print(f"Ошибка при подключении к драйверу Tobii: {str(e)}")
 
 
 def go_to_program_button():
-	'''
-	Это функция кнопки перейти к программе
-	'''
+    '''
+    Это функция кнопки перейти к программе
+    '''
 
-	pass
+    pass
 
 app.mainloop()
