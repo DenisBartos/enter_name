@@ -41,11 +41,8 @@ def connect_to_tobii(driver_name):
     '''
     Это функция подключения привязки программы (имя) конкретно к драйверу тобби
     '''
-    try:
-        print(f"Программа успешно подключена к драйверу {driver_name}")
-    except Exception as e:
-        print(f"Ошибка при подключении к драйверу Tobii: {str(e)}")
 
+    pass
 
 def go_to_program_button():
     '''
