@@ -25,7 +25,7 @@ label.pack(pady=20)
 frame = ctk.CTkFrame(master=app)
 frame.pack(pady=10,padx=10,fill='both',expand=True)
 
-label = ctk.CTkLabel(master=frame,text="Войда в систему для с помощью айтрекером управления коляской")
+label = ctk.CTkLabel(master=frame,text="Воход в систему управление коляской айтрекером")
 label.pack(pady=12,padx=10)
 
 
@@ -44,11 +44,13 @@ def connect_to_tobii(driver_name):
 
     pass
 
+
 def go_to_program_button():
     '''
     Это функция кнопки перейти к программе
     '''
 
     pass
+
 
 app.mainloop()
